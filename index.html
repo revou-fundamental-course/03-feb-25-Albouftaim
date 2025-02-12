@@ -1,28 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
-    <!-- Tag untuk responsive design-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css\style.css">
+    <title>Kalkulator Suhu</title>
+    <link rel = "icon" href = "asset/logorevou.png" type = "image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Kalkulator Suhu</h1>
-    </header>
-
-
-    <main>
-        <section>
-            
-        </section>
-    </main>
-
-    
-    <footer></footer>
-
+    <div class="container">
+        <h1 class="title">Kalkulator Suhu</h1>
+        <h1>Masukkan!! suhu derajat Celsius (°C) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (°F).</h1>
+        <label for="celsius">Celsius (°C):</label>
+        <input type="text" id="celsius" placeholder="Masukkan suhu dalam °C">
+        
+        <button id="convert">Konversi</button>
+        <button id="reset">Reset</button>
+        <button id="reverse">Reverse</button>
+        
+        <label for="fahrenheit">Fahrenheit (°F):</label>
+        <input type="text" id="fahrenheit" placeholder="Hasil suhu dalam °F" readonly\>
+        
+        <div class="calculation">
+            <label for="calculation">Cara Kalkulasi:</label>
+            <textarea id="calculation" rows="3" readonly></textarea>
+        </div>
+        
+        <div class="formula">
+            <h1>Cara Konversi Dari Celsius (°C) ke Fahrenheit (°F)</h1>
+            <p>Suhu <i>S</i> dalam derajat Fahrenheit (°F) sama dengan suhu <i>S</i> dalam derajat Celsius (°C) kali 9/5 tambah 32.</p>
+            <p><i>S</i><sub>(F)</sub> = (<i>S</i><sub>(C)</sub> x 9/5) + 32</p>
+            <p>atau</p>
+            <p><i>S</i><sub>(F)</sub> = (<i>S</i><sub>(C)</sub> x 1.8) + 32</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2025 Sayed Muhammad Qadri. All rights reserved.</p>
+    </footer>
+    <script src="js/java.js"></script>
 </body>
 </html>
