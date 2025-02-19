@@ -15,7 +15,7 @@ body {
     border: 2px solid #333; 
     border-radius: 10px; 
     background-color: white; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan untuk efek */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* tambahan bayangan untuk efek */
 }
 
 h1.title {
